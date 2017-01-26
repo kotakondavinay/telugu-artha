@@ -2,6 +2,7 @@ package com.telugu.sandhi;
 
 import com.telugu.nighantuvu.Nighantuvu;
 import com.telugu.sandhi.models.SandhiResponse;
+import com.telugu.sandhi.sanskrit.SavarnaDheergaSandhi;
 
 import java.util.ArrayList;
 import java.util.List;

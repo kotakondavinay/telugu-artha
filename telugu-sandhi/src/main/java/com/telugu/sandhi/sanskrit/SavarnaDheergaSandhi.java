@@ -1,6 +1,7 @@
-package com.telugu.sandhi;
+package com.telugu.sandhi.sanskrit;
 
 import com.telugu.nighantuvu.Nighantuvu;
+import com.telugu.sandhi.Sandhi;
 import com.telugu.sandhi.models.SandhiResponse;
 
 /**
