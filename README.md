@@ -1,10 +1,10 @@
 # telugu-artha
-Project Name: Viswambhara
-Inspired by C.Narayana Reddy Sahityam.
-Inspired by Satya Nadella's Statement "Empower every individual and org to achive more".
-We want empower telugu people to use their language in tech.
-This project is to create platform for telugu language understanding and can be imported anywhere and can be used in app. 
-If anyone wants contribute to this tech, please clone and raise pull request.
+Project Name: <b>Viswambhara</b><br>
+Inspired by C.Narayana Reddy Sahityam<br>
+Inspired by Satya Nadella's Statement "Empower every individual and org to achive more"<br>
+We want empower telugu people to use their language in tech<br>
+This project is to create platform for telugu language understanding and can be imported anywhere and can be used in app<br>
+If anyone wants contribute to this tech, please clone and raise pull request<br>
 
 1. Tech for telugu language understanding (Telugu Basha Parignanam. )
 2. Creating dictionary (Nighantuvu).
@@ -16,5 +16,5 @@ If anyone wants contribute to this tech, please clone and raise pull request.
 8. Many more to come.
 
 
-ప్రేమతో,
-మీ తెలుగు భాషాభిమాని
+ప్రేమతో,<br>
+మీ తెలుగు భాషాభిమాని<br>
