@@ -11,13 +11,25 @@ public class Nighantuvu {
 
     public Nighantuvu() {
         words = new HashSet<String>();
+        /** Added for SavaranaDheerga Sandhi */
+
         words.add("deva");
-        words.add("aalayam");
-        words.add("raama");
+        words.add("aalayaM");
         words.add("rAma");
         words.add("shiva");
         words.add("hima");
         words.add("adri");
+
+        /** Added for GunaSandhi Validation */
+        words.add("mahA");
+        words.add("utsavaM");
+
+        /** Added for Anunasika Sandhi */
+        words.add("jagat");
+        words.add("nivAsaM");
+        words.add("nATakaM");
+
+
     }
 
     public boolean contains(String token) {

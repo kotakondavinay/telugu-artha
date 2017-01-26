@@ -2,6 +2,8 @@ package com.telugu.sandhi;
 
 import com.telugu.nighantuvu.Nighantuvu;
 import com.telugu.sandhi.models.SandhiResponse;
+import com.telugu.sandhi.sanskrit.AnunasikaSandhi;
+import com.telugu.sandhi.sanskrit.GuNaSandhi;
 import com.telugu.sandhi.sanskrit.SavarnaDheergaSandhi;
 
 import java.util.ArrayList;
@@ -17,11 +19,13 @@ public class SandhiService {
     public SandhiService() {
         this.nighantuvu = new Nighantuvu();
         sandhiList.add(new SavarnaDheergaSandhi());
+        sandhiList.add(new GuNaSandhi());
+        sandhiList.add(new AnunasikaSandhi());
     }
 
-    public SandhiResponse isSandhi(String token) {
+    public SandhiResponse isSandhi(String token, boolean isTeluguScript) {
         for(Sandhi sandhi: sandhiList) {
-                SandhiResponse response = sandhi.isSandhi(token, nighantuvu);
+                SandhiResponse response = sandhi.isSandhi(token, nighantuvu, isTeluguScript);
                 if(response.isSandhi()){
                     return response;
                 }

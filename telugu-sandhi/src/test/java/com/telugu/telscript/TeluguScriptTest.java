@@ -19,5 +19,13 @@ public class TeluguScriptTest {
         Assert.assertEquals("eDamacEti", translate3);
         String translate4 = tc.t("పర్యటక" , "telugu", "hk");
         Assert.assertEquals("paryaTaka", translate4);
+
+        String translate5 = tc.t("జగత్" , "telugu", "hk");
+        Assert.assertEquals("jagat", translate5);
+        String translate6 = tc.t("నివాసం" , "telugu", "hk");
+        Assert.assertEquals("nivAsaM", translate6);
+        String translate7 = tc.t("జగన్నివాసం" , "telugu", "hk");
+        Assert.assertEquals("jagannivAsaM", translate7);
+
     }
 }

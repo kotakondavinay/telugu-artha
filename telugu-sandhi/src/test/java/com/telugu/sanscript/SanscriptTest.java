@@ -18,5 +18,7 @@ public class SanscriptTest {
         Sanscript tc = new Sanscript();
         String translate1 = tc.t("జట్టులొకి" , "telugu", "hk");
         Assert.assertEquals("jaTTulki", translate1);
+        //String translate2 = tc.t("jaTTulki" , "hk", "telugu");
+        //Assert.assertEquals("జట్టులొకి", translate1);
     }
 }
