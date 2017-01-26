@@ -1,42 +1,47 @@
 package com.telugu.telscript;
 
-import com.telugu.sanscript.Sanscript;
-
-import java.util.*;
-
 /**
- * Created by vinaykk on 26/01/17.
+ * TeluguScript
+ *
+ * TeluguScript is a Telugu transliteration library. Currently,
+ * Copied form ( https://github.com/sanskrit/sanscript.java )
+ * We have copied the technique from Sanscript But changed the Mapping according to Telugu Script.
+ *
  */
+import java.util.*;
+import java.lang.Math;
+
 public class TeluguScript {
+
     public TeluguScript() {
         initializeSchemes();
         initializeAlternates();
+        initializeSpecialSchemes();
     }
-
 
     // Options interface.
     public static interface Options extends Map<String, Object> {}
 
     // Options default implementation.
-    public static class HashOptions extends HashMap<String, Object> implements TeluguScript.Options {
-        public TeluguScript.HashOptions set(String key, Object value) {
+    public static class HashOptions extends HashMap<String, Object> implements Options  {
+        public HashOptions set(String key, Object value) {
             put(key, value);
             return this;
         }
     }
 
-    private TeluguScript.Options defaults = new TeluguScript.HashOptions().set("skip_sgml", false).set("syncope", false);
+    private Options defaults = new HashOptions().set("skip_sgml", false).set("syncope", false);
 
     // Scheme interface.
     public static interface Scheme extends Map<String, String[]> {
         // Create a deep copy of a scheme.
-        public TeluguScript.Scheme cheapCopy();
+        public Scheme cheapCopy();
     }
 
     // Scheme default implementation.
-    public static class HashScheme extends HashMap<String, String[]> implements TeluguScript.Scheme {
-        public TeluguScript.Scheme cheapCopy() {
-            TeluguScript.Scheme copy = new TeluguScript.HashScheme();
+    public static class HashScheme extends HashMap<String, String[]> implements Scheme {
+        public Scheme cheapCopy() {
+            Scheme copy = new HashScheme();
             for (Map.Entry<String, String[]> entry : entrySet()) {
                 String[] value = entry.getValue();
                 copy.put(entry.getKey(), Arrays.copyOf(value, value.length));
@@ -45,27 +50,41 @@ public class TeluguScript {
         }
     }
 
-    public class Schemes extends HashMap<String, TeluguScript.Scheme> {}
+    public class Schemes extends HashMap<String, Scheme> {}
 
-    private TeluguScript.Schemes schemes = new TeluguScript.Schemes();
+    private Schemes schemes = new Schemes();
 
     /**
      * Returns the collection of all schemes.
      *
      * @return Schemes
      */
-    public TeluguScript.Schemes getSchemes() {
+    public Schemes getSchemes() {
         return schemes;
     }
 
+    /* Schemes
+     * =======
+     * Schemes are of two kinds: "Brahmic" and "roman." "Brahmic" schemes
+     * describe abugida scripts found in India. "Roman" schemes describe
+     * manufactured alphabets that are meant to describe or encode Brahmi
+     * scripts. Abugidas and alphabets are processed by separate algorithms
+     * because of the unique difficulties involved with each.
+     *
+     * Brahmic consonants are stated without a virama. Roman consonants are
+     * stated without the vowel 'a'.
+     *
+     * (Since "abugida" is not a well-known term, Sanscript uses "Brahmic"
+     * and "roman" for clarity.)
+     */
     private void initializeSchemes() {
-        TeluguScript.Scheme scheme;
+        Scheme scheme;
 
         /* Telugu
          * ------
          * Sanskrit-complete.
          */
-        scheme = new TeluguScript.HashScheme();
+        scheme = new HashScheme();
         scheme.put("vowels", new String[] {"అ", "ఆ", "ఇ", "ఈ", "ఉ", "ఊ", "ఋ", "ౠ", "ఌ", "ౡ", "ఎ", "ఏ", "ఐ", "ఒ", "ఓ", "ఔ"});
         scheme.put("vowel_marks", new String[] {"ా", "ి", "ీ", "ు", "ూ", "ృ", "ౄ", "ౢ", "ౣ", "ె", "ే", "ై", "ొ", "ో", "ౌ"});
         scheme.put("other_marks", new String[] {"ం", "ః", "ఁ"});
@@ -75,18 +94,17 @@ public class TeluguScript {
         scheme.put("other", new String[] {"", "", "", "", "", "", "", "", "ఱ"});
         schemes.put("telugu", scheme);
 
-                /* Harvard-Kyoto
+        /* Harvard-Kyoto
          * -------------
          * A simple 1:1 mapping.
          */
         scheme = new HashScheme();
-        scheme.put("vowels", new String[] {"a", "A", "i", "I", "u", "U", "R", "RR", "lR", "lRR", "", "e", "ai", "", "o", "au"});
+        scheme.put("vowels", new String[] {"a", "A", "i", "I", "u", "U", "R", "RR", "lR", "lRR", "e", "E", "ai", "o", "O", "au"});
         scheme.put("other_marks", new String[] {"M", "H", "~",});
         scheme.put("virama", new String[] {""});
         scheme.put("consonants", new String[] {"k", "kh", "g", "gh", "G", "c", "ch", "j", "jh", "J", "T", "Th", "D", "Dh", "N", "t", "th", "d", "dh", "n", "p", "ph", "b", "bh", "m", "y", "r", "l", "v", "z", "S", "s", "h", "L", "kS", "jJ"});
         scheme.put("symbols", new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "OM", "'", "|", "||"});
         schemes.put("hk", scheme);
-
     }
 
     // Set of names of Roman schemes.
@@ -97,6 +115,7 @@ public class TeluguScript {
     private class Alternates extends HashMap<String, AlternateMap> {}
 
     private Alternates allAlternates = new Alternates();
+
     private void initializeAlternates() {
         AlternateMap map = new AlternateMap();
         map.put("A", new String[] {"aa"});
@@ -148,6 +167,57 @@ public class TeluguScript {
         return value != null && value;
     }
 
+    /**
+     * Add a Brahmic scheme to Sanscript.
+     *
+     * Schemes are of two types: "Brahmic" and "roman". Brahmic consonants
+     * have an inherent vowel sound, but roman consonants do not. This is the
+     * main difference between these two types of scheme.
+     *
+     * A scheme definition is an object ("{}") that maps a group name to a
+     * list of characters. For illustration, see the "devanagari" scheme at
+     * the top of this file.
+     *
+     * You can use whatever group names you like, but for the best results,
+     * you should use the same group names that Sanscript does.
+     *
+     * @param name    the scheme name
+     * @param scheme  the scheme data itself. This should be constructed as
+     *                described above.
+     */
+    public void addBrahmicScheme(String name, Scheme scheme) {
+        schemes.put(name, scheme);
+    }
+
+    /**
+     * Add a roman scheme to Sanscript.
+     *
+     * See the comments on addBrahmicScheme. The "vowel_marks" field
+     * can be omitted.
+     *
+     * @param name    the scheme name
+     * @param scheme  the scheme data itself
+     */
+    public void addRomanScheme(String name, Scheme scheme) {
+        if (scheme.get("vowel_marks") == null) {
+            scheme.put("vowel_marks", Arrays.copyOfRange(scheme.get("vowels"), 1, scheme.get("vowels").length));
+        }
+        schemes.put(name, scheme);
+        romanSchemes.put(name, true);
+    }
+
+    // Set up various schemes
+    private void initializeSpecialSchemes() {
+
+        // These schemes already belong to schemes. But by adding
+        // them again with `addRomanScheme`, we automatically build up
+        // `romanSchemes` and define a `vowel_marks` field for each one.
+        String[] schemeNames = new String[] { "hk"};
+        for (String name : schemeNames) {
+            addRomanScheme(name, schemes.get(name));
+        }
+
+    }
 
     private class SMap extends HashMap<String, String> {}
 
@@ -225,63 +295,6 @@ public class TeluguScript {
         map.virama = toScheme.get("virama");
 
         return map;
-    }
-
-    /**
-     * Transliterate from one script to another.
-     *
-     * @param data     the string to transliterate
-     * @param from     the source script
-     * @param to       the destination script
-     * @param options  transliteration options
-     * @return         the finished string
-     */
-    public String t(String data, String from, String to, Options options) {
-        if (options == null) {
-            options = new HashOptions();
-        }
-        Options cachedOptions = cache.options != null ? cache.options : new HashOptions();
-        boolean hasPriorState = (cache.from != null && cache.from.equals(from) && cache.to != null && cache.to.equals(to));
-        TMap map;
-
-        // Here we simultaneously build up an `options` object and compare
-        // these options to the options from the last run.
-        for (Map.Entry<String, Object> entry : defaults.entrySet()) {
-            String key = entry.getKey();
-            Object value = entry.getValue();
-            if (options.get(key) != null) {
-                value = options.get(key);
-            }
-            options.put(key, value);
-
-            // This comparison method is not generalizable, but since these
-            // objects are associative arrays with identical keys and with
-            // values of known type, it works fine here.
-            if (!value.equals(cachedOptions.get(key))) {
-                hasPriorState = false;
-            }
-        }
-
-        if (hasPriorState) {
-            map = cache.map;
-        } else {
-            map = makeMap(from, to, options);
-            cache.from = from;
-            cache.map = map;
-            cache.options = options;
-            cache.to = to;
-        }
-
-        if (map.fromRoman) {
-            return transliterateRoman(data, map, options);
-        } else {
-            return transliterateBrahmic(data, map, options);
-        }
-    }
-
-    // Version of t() that supplies null options.
-    public String t(String data, String from, String to) {
-        return t(data, from, to, null);
     }
 
     /**
@@ -454,4 +467,67 @@ public class TeluguScript {
         return buf.toString();
     }
 
+    /**
+     * Transliterate from one script to another.
+     *
+     * @param data     the string to transliterate
+     * @param from     the source script
+     * @param to       the destination script
+     * @param options  transliteration options
+     * @return         the finished string
+     */
+    public String t(String data, String from, String to, Options options) {
+        if (options == null) {
+            options = new HashOptions();
+        }
+        Options cachedOptions = cache.options != null ? cache.options : new HashOptions();
+        boolean hasPriorState = (cache.from != null && cache.from.equals(from) && cache.to != null && cache.to.equals(to));
+        TMap map;
+
+        // Here we simultaneously build up an `options` object and compare
+        // these options to the options from the last run.
+        for (Map.Entry<String, Object> entry : defaults.entrySet()) {
+            String key = entry.getKey();
+            Object value = entry.getValue();
+            if (options.get(key) != null) {
+                value = options.get(key);
+            }
+            options.put(key, value);
+
+            // This comparison method is not generalizable, but since these
+            // objects are associative arrays with identical keys and with
+            // values of known type, it works fine here.
+            if (!value.equals(cachedOptions.get(key))) {
+                hasPriorState = false;
+            }
+        }
+
+        if (hasPriorState) {
+            map = cache.map;
+        } else {
+            map = makeMap(from, to, options);
+            cache.from = from;
+            cache.map = map;
+            cache.options = options;
+            cache.to = to;
+        }
+
+        // Easy way out for "{\m+}", "\", and ".h".
+        if (from.equals("itrans")) {
+            data = data.replaceAll("\\{\\\\m\\+\\}", ".h.N");
+            data = data.replaceAll("\\.h", "");
+            data = data.replaceAll("\\\\([^'`_]|$)", "##$1##");
+        }
+
+        if (map.fromRoman) {
+            return transliterateRoman(data, map, options);
+        } else {
+            return transliterateBrahmic(data, map, options);
+        }
+    }
+
+    // Version of t() that supplies null options.
+    public String t(String data, String from, String to) {
+        return t(data, from, to, null);
+    }
 }
