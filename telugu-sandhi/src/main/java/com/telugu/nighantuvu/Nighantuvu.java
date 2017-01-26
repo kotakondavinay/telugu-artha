@@ -13,7 +13,8 @@ public class Nighantuvu {
         words = new HashSet<String>();
         words.add("deva");
         words.add("aalayam");
-        words.add("rama");
+        words.add("raama");
+        words.add("rAma");
         words.add("shiva");
         words.add("hima");
         words.add("adri");

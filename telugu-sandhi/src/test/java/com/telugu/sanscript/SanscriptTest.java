@@ -2,6 +2,7 @@ package com.telugu.sanscript;
 
 
 import com.telugu.telscript.TeluguScript;
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -12,14 +13,10 @@ public class SanscriptTest {
     @Test
     public void test() {
         Sanscript sc = new Sanscript();
-        String translate = sc.t("పర్యటక జట్టులోకి జట్టులొకి కొత్తగా వచ్చిన ఎడమచేతి వాటం అతడి" , "telugu", "hk");
-        System.out.println(translate);
-
-        TeluguScript tc = new TeluguScript();
-        String translate1 = tc.t("పర్యటక జట్టులోకి జట్టులొకి కొత్తగా వచ్చిన ఎడమచేతి వాటం అతడి" , "telugu", "hk");
-        System.out.println(translate1);
-
+        String translate = sc.t("జట్టులోకి" , "telugu", "hk");
+        Assert.assertEquals("jaTTuloki", translate);
+        Sanscript tc = new Sanscript();
+        String translate1 = tc.t("జట్టులొకి" , "telugu", "hk");
+        Assert.assertEquals("jaTTulki", translate1);
     }
-
-
 }

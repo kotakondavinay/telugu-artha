@@ -1,7 +1,6 @@
 package com.telugu.sandhi;
 
 import com.telugu.sandhi.models.SandhiResponse;
-import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -13,21 +12,27 @@ public class SandhiTest {
 
     @Test
     public void testSandhi() {
-        Sandhi s = new Sandhi();
+        SandhiService s = new SandhiService();
         SandhiResponse isSandhi1 = s.isSandhi("himaadri");
-        assertEquals(isSandhi1.isSandhi(), true);
-        assertEquals(isSandhi1.getFirstPart(), "hima");
-        assertEquals(isSandhi1.getSecondPart(), "adri");
+        assertEquals(true, isSandhi1.isSandhi());
+        assertEquals("hima", isSandhi1.getFirstPart());
+        assertEquals("adri", isSandhi1.getSecondPart());
 
         SandhiResponse isSandhi2 = s.isSandhi("himadri");
-        assertEquals(isSandhi2.isSandhi(), false);
-        assertEquals(isSandhi2.getFirstPart(), "");
-        assertEquals(isSandhi2.getSecondPart(), "");
+        assertEquals(false, isSandhi2.isSandhi());
+        assertEquals("", isSandhi2.getFirstPart());
+        assertEquals("", isSandhi2.getSecondPart());
 
         SandhiResponse isSandhi3 = s.isSandhi("shivaalayam");
-        assertEquals(isSandhi3.isSandhi(), true);
-        assertEquals(isSandhi3.getFirstPart(), "shiva");
-        assertEquals(isSandhi3.getSecondPart(), "aalayam");
+        assertEquals(true, isSandhi3.isSandhi());
+        assertEquals("shiva", isSandhi3.getFirstPart());
+        assertEquals("aalayam",isSandhi3.getSecondPart());
+
+        SandhiResponse isSandhi4 = s.isSandhi("raamaalayam");
+        assertEquals(true, isSandhi4.isSandhi());
+        assertEquals("rAma", isSandhi4.getFirstPart());
+        assertEquals("aalayam", isSandhi4.getSecondPart());
+
 
     }
 }
