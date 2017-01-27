@@ -21,6 +21,8 @@ public class SandhiService {
         sandhiList.add(new AnunasikaSandhi());
         sandhiList.add(new VRddiSandhi());
         sandhiList.add(new YanaDesaSandhi());
+        sandhiList.add(new ParasavarnaSandhi());
+        sandhiList.add(new SchutvaSandhi());
     }
 
     public SandhiResponse isSandhi(String token, boolean isTeluguScript) {

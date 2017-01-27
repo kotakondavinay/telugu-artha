@@ -31,14 +31,22 @@ public class Nighantuvu {
 
         /** Added for vRddi Sandhi */
         words.add("Eka");
-        words.add("aizvaryamu");
+        words.add("aiSvaryamu");
 
         /** Added for YanaDesa Sandhi */
         words.add("prati");
-        words.add("akSamu");
+        words.add("akshamu");
         words.add("gauri");
         words.add("ArAdhanaM");
 
+        /** Added for Parasa varna Sandhi */
+        words.add("vidyut");
+        words.add("lata");
+
+        /** Added for Schuthva Sandhi */
+        words.add("sat");
+        words.add("janulu");
+        words.add("Sakti");
 
     }
 

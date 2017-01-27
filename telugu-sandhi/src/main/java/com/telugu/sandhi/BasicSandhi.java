@@ -43,7 +43,7 @@ public class BasicSandhi {
             for(String firstPart: firstPartValues) {
                 for(String secondPart: secondPartValues) {
                     if(nighantuvu.contains(firstPart) && nighantuvu.contains(secondPart)) {
-                        return new SandhiResponse(true, firstPart, secondPart);
+                        return new SandhiResponse(true, firstPart, secondPart, this.getClass().getName());
                     }
                 }
             }
