@@ -29,6 +29,16 @@ public class Nighantuvu {
         words.add("nivAsaM");
         words.add("nATakaM");
 
+        /** Added for vRddi Sandhi */
+        words.add("Eka");
+        words.add("aizvaryamu");
+
+        /** Added for YanaDesa Sandhi */
+        words.add("prati");
+        words.add("akSamu");
+        words.add("gauri");
+        words.add("ArAdhanaM");
+
 
     }
 

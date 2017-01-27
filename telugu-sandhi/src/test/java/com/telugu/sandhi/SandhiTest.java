@@ -52,8 +52,10 @@ public class SandhiTest {
 
     @Test
     public void testGuNaSandhi() {
+
         SandhiService s = new SandhiService();
         SandhiResponse isSandhi1 = s.isSandhi("mahOtsavaM", false);
+
         assertEquals(true, isSandhi1.isSandhi());
         assertEquals("mahA", isSandhi1.getFirstPart());
         assertEquals("utsavaM", isSandhi1.getSecondPart());
@@ -73,8 +75,36 @@ public class SandhiTest {
 
         SandhiResponse isSandhi1T = s.isSandhi("జగన్నివాసం", true);
         assertEquals(true, isSandhi1T.isSandhi());
-        assertEquals("jagat", isSandhi1T.getFirstPart());
-        assertEquals("nivAsaM", isSandhi1T.getSecondPart());
+        assertEquals(ts.t("జగత్", "telugu", "hk"), isSandhi1.getFirstPart());
+        assertEquals(ts.t("నివాసం", "telugu", "hk"), isSandhi1.getSecondPart());
+    }
 
+    @Test
+    public void testvRddiSandhi() {
+
+        SandhiService s = new SandhiService();
+        TeluguScript ts = new TeluguScript();
+
+        SandhiResponse isSandhi1 = s.isSandhi("ఏకైశ్వర్యము", true);
+        assertEquals(true, isSandhi1.isSandhi());
+        assertEquals(ts.t("ఏక", "telugu", "hk"), isSandhi1.getFirstPart());
+        assertEquals(ts.t("ఐశ్వర్యము","telugu","hk"), isSandhi1.getSecondPart());
+    }
+
+    @Test
+    public void testYanaDesaSandhi() {
+
+        SandhiService s = new SandhiService();
+        TeluguScript ts = new TeluguScript();
+
+        SandhiResponse isSandhi1 = s.isSandhi("ప్రత్యక్షము", true);
+        assertEquals(true, isSandhi1.isSandhi());
+        assertEquals(ts.t("ప్రతి", "telugu", "hk"), isSandhi1.getFirstPart());
+        assertEquals(ts.t("అక్షము","telugu","hk"), isSandhi1.getSecondPart());
+
+        SandhiResponse isSandhi2 = s.isSandhi("గౌర్యారాధనం", true);
+        assertEquals(true, isSandhi2.isSandhi());
+        assertEquals(ts.t("గౌరి", "telugu", "hk"), isSandhi2.getFirstPart());
+        assertEquals(ts.t("ఆరాధనం","telugu","hk"), isSandhi2.getSecondPart());
     }
 }
