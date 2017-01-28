@@ -27,5 +27,8 @@ public class TeluguScriptTest {
         String translate7 = tc.t("జగన్నివాసం" , "telugu", "hk");
         Assert.assertEquals("jagannivAsaM", translate7);
 
+        String translate8 = tc.t("ధనుః", "telugu", "hk");
+        Assert.assertEquals("dhanuH", translate8);
+
     }
 }

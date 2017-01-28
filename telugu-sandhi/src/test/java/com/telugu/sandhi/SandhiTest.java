@@ -145,4 +145,23 @@ public class SandhiTest {
         assertEquals(ts.t("జనులు","telugu","hk"), isSandhi1.getSecondPart());
         assertEquals(SchutvaSandhi.class.getName(), isSandhi1.getSandhiName());
     }
+
+    @Test
+    public void testVisargaSandhi() {
+        SandhiService s = new SandhiService();
+        TeluguScript ts = new TeluguScript();
+
+        SandhiResponse isSandhi1 = s.isSandhi("శిరోవేదన", true);
+        assertEquals(true, isSandhi1.isSandhi());
+        assertEquals(ts.t("శిరః", "telugu", "hk"), isSandhi1.getFirstPart());
+        assertEquals(ts.t("వేదన","telugu","hk"), isSandhi1.getSecondPart());
+        assertEquals(VisargaSandhi.class.getName(), isSandhi1.getSandhiName());
+
+        SandhiResponse isSandhi2 = s.isSandhi("చతుష్షష్టి", true);
+        assertEquals(true, isSandhi2.isSandhi());
+        assertEquals(ts.t("చతుః", "telugu", "hk"), isSandhi2.getFirstPart());
+        assertEquals(ts.t("షష్టి","telugu","hk"), isSandhi2.getSecondPart());
+        assertEquals(VisargaSandhi.class.getName(), isSandhi2.getSandhiName());
+
+    }
 }

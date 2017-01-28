@@ -48,6 +48,12 @@ public class Nighantuvu {
         words.add("janulu");
         words.add("Sakti");
 
+        /** Added for Visarga Sandhi */
+        words.add("SiraH");
+        words.add("vEdana");
+        words.add("catuH");
+        words.add("shashTi");
+
     }
 
     public boolean contains(String token) {
