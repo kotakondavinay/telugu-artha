@@ -1,7 +1,6 @@
 package com.telugu.sandhi;
 
-import com.telugu.sandhi.models.SandhiResponse;
-import com.telugu.sandhi.models.SandhiSeperator;
+import com.telugu.models.SandhiResponse;
 import com.telugu.sandhi.sanskrit.*;
 import com.telugu.telscript.TeluguScript;
 import org.junit.Test;

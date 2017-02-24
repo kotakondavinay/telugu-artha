@@ -1,7 +1,7 @@
 package com.telugu.sandhi;
 
 import com.telugu.nighantuvu.Nighantuvu;
-import com.telugu.sandhi.models.SandhiResponse;
+import com.telugu.models.SandhiResponse;
 
 /**
  * Created by vinaykk on 26/01/17.

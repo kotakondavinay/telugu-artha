@@ -1,6 +1,6 @@
-package com.telugu.sandhi.models;
+package com.telugu.models;
 
-import com.sun.tools.javac.util.StringUtils;
+import java.util.List;
 
 /**
  * Created by vinaykk on 22/01/17.

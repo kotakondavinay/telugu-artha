@@ -1,7 +1,7 @@
 package com.telugu.sandhi;
 
 import com.telugu.nighantuvu.Nighantuvu;
-import com.telugu.sandhi.models.SandhiResponse;
+import com.telugu.models.SandhiResponse;
 import com.telugu.sandhi.sanskrit.*;
 
 import java.util.ArrayList;

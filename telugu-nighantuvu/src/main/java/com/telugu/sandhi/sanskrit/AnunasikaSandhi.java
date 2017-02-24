@@ -3,8 +3,8 @@ package com.telugu.sandhi.sanskrit;
 import com.telugu.nighantuvu.Nighantuvu;
 import com.telugu.sandhi.BasicSandhi;
 import com.telugu.sandhi.Sandhi;
-import com.telugu.sandhi.models.SandhiResponse;
-import com.telugu.sandhi.models.SandhiSeperator;
+import com.telugu.models.SandhiResponse;
+import com.telugu.models.SandhiSeperator;
 
 import java.util.ArrayList;
 import java.util.Arrays;

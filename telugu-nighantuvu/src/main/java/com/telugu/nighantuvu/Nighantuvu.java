@@ -56,7 +56,17 @@ public class Nighantuvu {
 
     }
 
-    public boolean contains(String token) {
-        return words.contains(token);
+    public boolean contains(String word) {
+        return words.contains(word);
     }
+
+    public void add(String word) {
+        words.add(word);
+    }
+
+    public void delete(String word) {
+        words.remove(word);
+    }
+
+    public Set<String> getWords(){ return words; }
 }

@@ -1,9 +1,9 @@
-package com.telugu.sandhi.models;
+package com.telugu.models;
 
 import java.util.List;
 
 /**
- * Created by vinaykk on 26/01/17.
+ * Created by vinaykk on 25/02/17.
  */
 public class SandhiSeperator {
     private String seperator;
