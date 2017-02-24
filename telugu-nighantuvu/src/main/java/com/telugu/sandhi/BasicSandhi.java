@@ -11,9 +11,11 @@ import java.util.List;
 /**
  * Created by vinaykk on 26/01/17.
  */
-public class BasicSandhi {
+public abstract class BasicSandhi {
 
     protected TeluguScript ts = new TeluguScript();
+
+    public abstract SandhiResponse isSandhi(String tokenString, Nighantuvu nighantuvu, boolean isTeluguScript);
 
     public SandhiResponse isSandhi(String processedToken,
                                    SandhiSeperator sandhiSeperator, Nighantuvu nighantuvu) {

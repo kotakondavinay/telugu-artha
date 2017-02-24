@@ -13,21 +13,20 @@ import java.util.List;
 /**
  * Created by vinaykk on 26/01/17.
  */
-public class SchutvaSandhi extends BasicSandhi implements Sandhi {
+public class SavarnaDheergaSandhi extends BasicSandhi {
 
     public SandhiResponse isSandhi(String tokenString, Nighantuvu nighantuvu, boolean isTeluguScript) {
         if(isTeluguScript) {
             tokenString = ts.t(tokenString, "telugu", "hk");
         }
-        String token = tokenString;
+        String token  = tokenString.replace("aa" , "A").replace("ee", "I").replace("uu", "U").replace("oo", "U");
 
-        // TODO. Check with Telugu Expert and fill rest values.
+        // Lookup into possible values "A", "I", "U",
+        // TODO . for RR
         List<SandhiSeperator> possibleSeperatos = new ArrayList<SandhiSeperator>();
-        possibleSeperatos.add(new SandhiSeperator("cc", Arrays.asList("t"), Arrays.asList("c","S","s","sh")));
-        possibleSeperatos.add(new SandhiSeperator("cC", Arrays.asList("t"), Arrays.asList("C","S","s","sh")));
-        possibleSeperatos.add(new SandhiSeperator("jj", Arrays.asList("t"), Arrays.asList("j")));
-        possibleSeperatos.add(new SandhiSeperator("ss", Arrays.asList("t"), Arrays.asList("s","s","sh")));
-
+        possibleSeperatos.add(new SandhiSeperator("A", Arrays.asList("a"), Arrays.asList("a", "A", "aa")));
+        possibleSeperatos.add(new SandhiSeperator("I", Arrays.asList("i"), Arrays.asList("i", "I", "ee")));
+        possibleSeperatos.add(new SandhiSeperator("U", Arrays.asList("U"), Arrays.asList("u", "U", "uu")));
 
         SandhiResponse sandhiResponse = isSandhi(token, possibleSeperatos, nighantuvu);
         // TODO. english to telugu translation is not working. fix this.
@@ -40,6 +39,5 @@ public class SchutvaSandhi extends BasicSandhi implements Sandhi {
             }
         }
         return sandhiResponse;
-
     }
 }

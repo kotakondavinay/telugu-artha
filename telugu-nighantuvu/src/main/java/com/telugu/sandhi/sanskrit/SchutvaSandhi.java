@@ -13,17 +13,21 @@ import java.util.List;
 /**
  * Created by vinaykk on 26/01/17.
  */
-public class ParasavarnaSandhi extends BasicSandhi implements Sandhi {
+public class SchutvaSandhi extends BasicSandhi {
+
     public SandhiResponse isSandhi(String tokenString, Nighantuvu nighantuvu, boolean isTeluguScript) {
         if(isTeluguScript) {
             tokenString = ts.t(tokenString, "telugu", "hk");
         }
         String token = tokenString;
 
-        // Lookup into possible values "ai", "au".
+        // TODO. Check with Telugu Expert and fill rest values.
         List<SandhiSeperator> possibleSeperatos = new ArrayList<SandhiSeperator>();
-        possibleSeperatos.add(new SandhiSeperator("lla", Arrays.asList("t"), Arrays.asList("la")));
-        possibleSeperatos.add(new SandhiSeperator("llA", Arrays.asList("t"), Arrays.asList("lA")));
+        possibleSeperatos.add(new SandhiSeperator("cc", Arrays.asList("t"), Arrays.asList("c","S","s","sh")));
+        possibleSeperatos.add(new SandhiSeperator("cC", Arrays.asList("t"), Arrays.asList("C","S","s","sh")));
+        possibleSeperatos.add(new SandhiSeperator("jj", Arrays.asList("t"), Arrays.asList("j")));
+        possibleSeperatos.add(new SandhiSeperator("ss", Arrays.asList("t"), Arrays.asList("s","s","sh")));
+
 
         SandhiResponse sandhiResponse = isSandhi(token, possibleSeperatos, nighantuvu);
         // TODO. english to telugu translation is not working. fix this.
@@ -36,5 +40,6 @@ public class ParasavarnaSandhi extends BasicSandhi implements Sandhi {
             }
         }
         return sandhiResponse;
+
     }
 }

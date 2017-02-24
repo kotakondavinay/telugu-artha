@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class SandhiService {
     private Nighantuvu nighantuvu;
-    private List<Sandhi> sandhiList = new ArrayList<Sandhi>();
+    private List<BasicSandhi> sandhiList = new ArrayList<BasicSandhi>();
 
     public SandhiService() {
         this.nighantuvu = new Nighantuvu();
@@ -27,7 +27,7 @@ public class SandhiService {
     }
 
     public SandhiResponse isSandhi(String token, boolean isTeluguScript) {
-        for(Sandhi sandhi: sandhiList) {
+        for(BasicSandhi sandhi: sandhiList) {
                 SandhiResponse response = sandhi.isSandhi(token, nighantuvu, isTeluguScript);
                 if(response.isSandhi()){
                     return response;

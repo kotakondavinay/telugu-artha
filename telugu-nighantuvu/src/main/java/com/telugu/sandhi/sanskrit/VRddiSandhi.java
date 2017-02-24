@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by vinaykk on 26/01/17.
  */
-public class VRddiSandhi extends BasicSandhi implements Sandhi{
+public class VRddiSandhi extends BasicSandhi {
 
     public SandhiResponse isSandhi(String tokenString, Nighantuvu nighantuvu, boolean isTeluguScript) {
         if(isTeluguScript) {

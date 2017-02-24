@@ -13,20 +13,26 @@ import java.util.List;
 /**
  * Created by vinaykk on 26/01/17.
  */
-public class SavarnaDheergaSandhi extends BasicSandhi implements Sandhi {
-
+public class AnunasikaSandhi extends BasicSandhi {
     public SandhiResponse isSandhi(String tokenString, Nighantuvu nighantuvu, boolean isTeluguScript) {
         if(isTeluguScript) {
             tokenString = ts.t(tokenString, "telugu", "hk");
         }
-        String token  = tokenString.replace("aa" , "A").replace("ee", "I").replace("uu", "U").replace("oo", "U");
+        String token = tokenString;
 
-        // Lookup into possible values "A", "I", "U",
-        // TODO . for RR
+        //Anunasikas are G, J, N, n, m
+        // Lookup into possible values "Gm", "Jm", "Nm", "nm", "mm", "Gn", "Jn", "Nn", "nn", "mn".
         List<SandhiSeperator> possibleSeperatos = new ArrayList<SandhiSeperator>();
-        possibleSeperatos.add(new SandhiSeperator("A", Arrays.asList("a"), Arrays.asList("a", "A", "aa")));
-        possibleSeperatos.add(new SandhiSeperator("I", Arrays.asList("i"), Arrays.asList("i", "I", "ee")));
-        possibleSeperatos.add(new SandhiSeperator("U", Arrays.asList("U"), Arrays.asList("u", "U", "uu")));
+        possibleSeperatos.add(new SandhiSeperator("Gn", Arrays.asList("k"), Arrays.asList("n")));
+        possibleSeperatos.add(new SandhiSeperator("Jn", Arrays.asList("c"), Arrays.asList("n")));
+        possibleSeperatos.add(new SandhiSeperator("Nn", Arrays.asList("T"), Arrays.asList("n")));
+        possibleSeperatos.add(new SandhiSeperator("nn", Arrays.asList("t"), Arrays.asList("n")));
+        possibleSeperatos.add(new SandhiSeperator("mn", Arrays.asList("p"), Arrays.asList("n")));
+        possibleSeperatos.add(new SandhiSeperator("Gm", Arrays.asList("k"), Arrays.asList("m")));
+        possibleSeperatos.add(new SandhiSeperator("Jm", Arrays.asList("c"), Arrays.asList("m")));
+        possibleSeperatos.add(new SandhiSeperator("Nm", Arrays.asList("T"), Arrays.asList("m")));
+        possibleSeperatos.add(new SandhiSeperator("nm", Arrays.asList("t"), Arrays.asList("m")));
+        possibleSeperatos.add(new SandhiSeperator("mm", Arrays.asList("p"), Arrays.asList("m")));
 
         SandhiResponse sandhiResponse = isSandhi(token, possibleSeperatos, nighantuvu);
         // TODO. english to telugu translation is not working. fix this.

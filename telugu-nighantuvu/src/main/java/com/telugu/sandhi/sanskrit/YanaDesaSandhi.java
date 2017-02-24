@@ -13,26 +13,26 @@ import java.util.List;
 /**
  * Created by vinaykk on 26/01/17.
  */
-public class AnunasikaSandhi extends BasicSandhi implements Sandhi {
+public class YanaDesaSandhi extends BasicSandhi {
+
     public SandhiResponse isSandhi(String tokenString, Nighantuvu nighantuvu, boolean isTeluguScript) {
         if(isTeluguScript) {
             tokenString = ts.t(tokenString, "telugu", "hk");
         }
         String token = tokenString;
 
-        //Anunasikas are G, J, N, n, m
-        // Lookup into possible values "Gm", "Jm", "Nm", "nm", "mm", "Gn", "Jn", "Nn", "nn", "mn".
+        // TODO fix for R case.
+        // Lookup into possible values "ai", "au".
         List<SandhiSeperator> possibleSeperatos = new ArrayList<SandhiSeperator>();
-        possibleSeperatos.add(new SandhiSeperator("Gn", Arrays.asList("k"), Arrays.asList("n")));
-        possibleSeperatos.add(new SandhiSeperator("Jn", Arrays.asList("c"), Arrays.asList("n")));
-        possibleSeperatos.add(new SandhiSeperator("Nn", Arrays.asList("T"), Arrays.asList("n")));
-        possibleSeperatos.add(new SandhiSeperator("nn", Arrays.asList("t"), Arrays.asList("n")));
-        possibleSeperatos.add(new SandhiSeperator("mn", Arrays.asList("p"), Arrays.asList("n")));
-        possibleSeperatos.add(new SandhiSeperator("Gm", Arrays.asList("k"), Arrays.asList("m")));
-        possibleSeperatos.add(new SandhiSeperator("Jm", Arrays.asList("c"), Arrays.asList("m")));
-        possibleSeperatos.add(new SandhiSeperator("Nm", Arrays.asList("T"), Arrays.asList("m")));
-        possibleSeperatos.add(new SandhiSeperator("nm", Arrays.asList("t"), Arrays.asList("m")));
-        possibleSeperatos.add(new SandhiSeperator("mm", Arrays.asList("p"), Arrays.asList("m")));
+        possibleSeperatos.add(new SandhiSeperator("ya", Arrays.asList("i"), Arrays.asList("a")));
+        possibleSeperatos.add(new SandhiSeperator("yA", Arrays.asList("i"), Arrays.asList("A")));
+        possibleSeperatos.add(new SandhiSeperator("yu", Arrays.asList("i"), Arrays.asList("u")));
+        possibleSeperatos.add(new SandhiSeperator("yU", Arrays.asList("i"), Arrays.asList("U")));
+        possibleSeperatos.add(new SandhiSeperator("vu", Arrays.asList("u"), Arrays.asList("a")));
+        possibleSeperatos.add(new SandhiSeperator("vU", Arrays.asList("u"), Arrays.asList("A")));
+        possibleSeperatos.add(new SandhiSeperator("ve", Arrays.asList("v"), Arrays.asList("i")));
+        possibleSeperatos.add(new SandhiSeperator("vE", Arrays.asList("v"), Arrays.asList("I")));
+
 
         SandhiResponse sandhiResponse = isSandhi(token, possibleSeperatos, nighantuvu);
         // TODO. english to telugu translation is not working. fix this.
@@ -44,6 +44,7 @@ public class AnunasikaSandhi extends BasicSandhi implements Sandhi {
                 //sandhiResponse.setSecondPart(ts.t(secondPart, "hk", "telugu"));
             }
         }
+
         return sandhiResponse;
     }
 }
