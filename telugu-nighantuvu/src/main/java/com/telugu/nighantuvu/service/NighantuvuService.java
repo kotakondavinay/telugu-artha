@@ -29,9 +29,9 @@ public class NighantuvuService {
 
     public NighantuvuService() {
         this.nighantuvu = new Nighantuvu();
-        this.sandhiService = new SandhiService();
         this.ts = new TeluguScript();
         init();
+        this.sandhiService = new SandhiService(this.nighantuvu);
     }
 
     public void init() {

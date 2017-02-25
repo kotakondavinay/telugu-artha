@@ -16,7 +16,7 @@ public class TeluguPadamStreamProcessorService {
         this.nighantuvuService = new NighantuvuService();
     }
 
-    public void processEenaduSet(String fileName) {
+    public void processSet(String fileName) {
         File nighantuvuFile = new File(getClass().getResource(fileName).getFile());
         try (Scanner scanner = new Scanner(nighantuvuFile)) {
 

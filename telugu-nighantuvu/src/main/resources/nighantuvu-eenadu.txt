@@ -112,7 +112,6 @@ AlayAllOnU	ఆలయాల్లోనూ
 AlayAlu	ఆలయాలు
 AlayAlunnAyi	ఆలయాలున్నాయి
 AlayAniki	ఆలయానికి
-AlayAnni	ఆలయాన్ని
 Alaya	ఆలయ
 AlayaM	ఆలయం
 AlayaMlO	ఆలయంలో
@@ -128,7 +127,6 @@ Ame	ఆమె
 Amenu	ఆమెను
 AmuktamAlyada	ఆముక్తమాల్యద
 An	ఆన్
-AnaMdAnni	ఆనందాన్ని
 AnaMdAnniccE	ఆనందాన్నిచ్చే
 AnaMda	ఆనంద
 AnaMdaM	ఆనందం
@@ -162,7 +160,6 @@ ArAdhistunnavArU	ఆరాధిస్తున్నవారూ
 ArOgyAlu	ఆరోగ్యాలు
 ArOgyAnikI	ఆరోగ్యానికీ
 ArOgyAniki	ఆరోగ్యానికి
-ArOgyAnni	ఆరోగ్యాన్ని
 ArOgya	ఆరోగ్య
 ArOgyaM	ఆరోగ్యం
 ArOgyaMgA	ఆరోగ్యంగా
@@ -286,10 +283,8 @@ EM	ఏం
 EMTaMTE	ఏంటంటే
 ETA	ఏటా
 ETIem	ఏటీఎమ్
-EdO	ఏదో
 EdainA	ఏదైనా
 Edani	ఏదని
-Edi	ఏది
 EdigEkoddI	ఏదిగేకొద్దీ
 Een	ఏఎన్
 EkAMtaM	ఏకాంతం
@@ -324,7 +319,6 @@ ErpaDutuMdi	ఏర్పడుతుంది
 ErparacukOvaTaM	ఏర్పరచుకోవటం
 EvEvO	ఏవేవో
 EvainA	ఏవైనా
-Evi	ఏవి
 EyE	ఏయే
 I	ఈ
 ISvaruDu	ఈశ్వరుడు
@@ -358,7 +352,6 @@ SAstraMgA	శాస్త్రంగా
 SAstraMlAgA	శాస్త్రంలాగా
 SAtaM	శాతం
 SRMgArAniki	శృంగారానికి
-SRMgArAnni	శృంగారాన్ని
 SRMgArAnubhavAnnI	శృంగారానుభవాన్నీ
 SRMgAra	శృంగార
 SRMgAraM	శృంగారం
@@ -387,8 +380,6 @@ SanivAraM	శనివారం
 SarIrAla	శరీరాల
 SarIrAllO	శరీరాల్లో
 SarIrAniki	శరీరానికి
-SarIrAnnI	శరీరాన్నీ
-SarIrAnni	శరీరాన్ని
 SarIra	శరీర
 SarIraM	శరీరం
 SarIraMlO	శరీరంలో
@@ -577,7 +568,6 @@ aMdulO	అందులో
 aMdutuMDaTaMtO	అందుతుండటంతో
 aMdutuMdi	అందుతుంది
 aMduvalla	అందువల్ల
-aMgAMga	అంగాంగ
 aMgAla	అంగాల
 aMgIkariMcE	అంగీకరించే
 aMgIrasa	అంగీరస
@@ -672,15 +662,12 @@ ahObila	అహోబిల
 ahObilaM	అహోబిలం
 ahObilaMlO	అహోబిలంలో
 ai	ఐ
-aiTI	ఐటీ
 aiTIIes	ఐటీఈఎస్
-aidu	ఐదు
 aidugurilO	ఐదుగురిలో
 aien	ఐఎన్
 aikyaM	ఐక్యం
 aikyarAjyasamiti	ఐక్యరాజ్యసమితి
 aitihyaM	ఐతిహ్యం
-aivI	ఐవీ
 ajJAnaM	అజ్ఞానం
 akAla	అకాల
 akauMTeMT	అకౌంటెంట్
@@ -759,7 +746,6 @@ anipistunnadi	అనిపిస్తున్నది
 anirvacanIyamaina	అనిర్వచనీయమైన
 anivAryamayyAyi	అనివార్యమయ్యాయి
 annA	అన్నా
-annAbhishEkaM	అన్నాభిషేకం
 annAraTa	అన్నారట
 annAru	అన్నారు
 annI	అన్నీ
@@ -877,7 +863,6 @@ atikramiMcanaMta	అతిక్రమించనంత
 atipedda	అతిపెద్ద
 atithigRhAlu	అతిథిగృహాలు
 atri	అత్రి
-atyaMta	అత్యంత
 atyadbhuta	అత్యద్భుత
 atyadhika	అత్యధిక
 atyavasara	అత్యవసర
@@ -1135,7 +1120,6 @@ bhAvistunnaTTu	భావిస్తున్నట్టు
 bhEdaM	భేదం
 bhEshajAlU	భేషజాలూ
 bhImESvarAlayAniki	భీమేశ్వరాలయానికి
-bhImESvarAlayaM	భీమేశ్వరాలయం
 bhImESvara	భీమేశ్వర
 bhImESvaramUrtini	భీమేశ్వరమూర్తిని
 bhImESvarapaTTaNE	భీమేశ్వరపట్టణే
@@ -1233,9 +1217,7 @@ brahmAMDaMlO	బ్రహ్మాండంలో
 brahmE	బ్రహ్మే
 brahmOtsavAlU	బ్రహ్మోత్సవాలూ
 brahmOtsavAla	బ్రహ్మోత్సవాల
-brahmOtsavAlaku	బ్రహ్మోత్సవాలకు
 brahmOtsavAllO	బ్రహ్మోత్సవాల్లో
-brahmOtsavAlu	బ్రహ్మోత్సవాలు
 brahma	బ్రహ్మ
 brahmadEvuni	బ్రహ్మదేవుని
 brahmaku	బ్రహ్మకు
@@ -1319,7 +1301,6 @@ cEstU	చేస్తూ
 cEstuMTAru	చేస్తుంటారు
 cEstuMdani	చేస్తుందని
 cEstuMdi	చేస్తుంది
-cEstunnAru	చేస్తున్నారు
 cEstunna	చేస్తున్న
 cEstunnaTTE	చేస్తున్నట్టే
 cEstunnappuDu	చేస్తున్నప్పుడు
@@ -1497,7 +1478,6 @@ ceppAlaMTE	చెప్పాలంటే
 ceppAli	చెప్పాలి
 ceppAru	చెప్పారు
 ceppE	చెప్పే
-ceppEMduku	చెప్పేందుకు
 ceppESAmani	చెప్పేశామని
 ceppEvALlu	చెప్పేవాళ్లు
 ceppaDAniki	చెప్పడానికి
@@ -1625,8 +1605,6 @@ dEnimIdainA	దేనిమీదైనా
 dEnnI	దేన్నీ
 dEvAlayAla	దేవాలయాల
 dEvAlayAnni	దేవాలయాన్ని
-dEvAlaya	దేవాలయ
-dEvAlayaM	దేవాలయం
 dEvIdEvatAmUrtulU	దేవీదేవతామూర్తులూ
 dEvO	దేవో
 dEva	దేవ
@@ -1724,7 +1702,6 @@ darSamiccina	దర్శమిచ్చిన
 darSan	దర్శన్
 darSanAla	దర్శనాల
 darSanAlanu	దర్శనాలను
-darSanAnaMtaraM	దర్శనానంతరం
 darSanAniki	దర్శనానికి
 darSanIyaM	దర్శనీయం
 darSana	దర్శన
@@ -1816,7 +1793,6 @@ divyasannidhi	దివ్యసన్నిధి
 dorikipOtE	దొరికిపోతే
 dorukutuMdi	దొరుకుతుంది
 drAkshArAmAniki	ద్రాక్షారామానికి
-drAkshArAmAnni	ద్రాక్షారామాన్ని
 drAkshArAma	ద్రాక్షారామ
 drAkshArAmaM	ద్రాక్షారామం
 drAkshArAmaMlO	ద్రాక్షారామంలో
@@ -2263,7 +2239,6 @@ jIvistunnAmanna	జీవిస్తున్నామన్న
 jIvitAMtaM	జీవితాంతం
 jIvitAllO	జీవితాల్లో
 jIvitAnnE	జీవితాన్నే
-jIvitAnni	జీవితాన్ని
 jIvita	జీవిత
 jIvitaM	జీవితం
 jIvitaMlO	జీవితంలో
@@ -2576,7 +2551,6 @@ kalisE	కలిసే
 kalisi	కలిసి
 kalisimelisi	కలిసిమెలిసి
 kalistE	కలిస్తే
-kaliyugAraMbhaMlO	కలియుగారంభంలో
 kaliyuga	కలియుగ
 kaliyugaMlO	కలియుగంలో
 kallOlAniki	కల్లోలానికి
@@ -2631,7 +2605,6 @@ kanuka	కనుక
 kanuma	కనుమ
 kapAla	కపాల
 kapilESvara	కపిలేశ్వర
-kapilESvaruDu	కపిలేశ్వరుడు
 kapila	కపిల
 kapilamuni	కపిలముని
 kapilatIrthaM	కపిలతీర్థం
@@ -2775,7 +2748,6 @@ kshEtaM	క్షేతం
 kshEtrAllO	క్షేత్రాల్లో
 kshEtrAllOnU	క్షేత్రాల్లోనూ
 kshEtrAniki	క్షేత్రానికి
-kshEtrAnni	క్షేత్రాన్ని
 kshEtra	క్షేత్ర
 kshEtraM	క్షేత్రం
 kshEtraMgA	క్షేత్రంగా
@@ -2902,7 +2874,6 @@ laksha	లక్ష
 lakshaNAlu	లక్షణాలు
 lakshabiLvArcana	లక్షబిళ్వార్చన
 lakshabilvArcana	లక్షబిల్వార్చన
-lakshalAdi	లక్షలాది
 lakshala	లక్షల
 lakshalamaMdi	లక్షలమంది
 lakshmI	లక్ష్మీ
@@ -2922,7 +2893,6 @@ lekka	లెక్క
 lekkalu	లెక్కలు
 lekkiMcaDAniki	లెక్కించడానికి
 lekkiMcukunE	లెక్కించుకునే
-liMgAnni	లింగాన్ని
 liMga	లింగ
 liMgaM	లింగం
 liMgaMdinnelaku	లింగందిన్నెలకు
@@ -3576,7 +3546,6 @@ nirvahiMcina	నిర్వహించిన
 nirvahiMcukunna	నిర్వహించుకున్న
 nirvahistAru	నిర్వహిస్తారు
 nirvahistOMdi	నిర్వహిస్తోంది
-nirvahistunnAru	నిర్వహిస్తున్నారు
 nirvahistunna	నిర్వహిస్తున్న
 nirvighnaMgA	నిర్విఘ్నంగా
 nirvighnamastu	నిర్విఘ్నమస్తు
@@ -3586,7 +3555,6 @@ nishiddhapadaM	నిషిద్ధపదం
 nissAramaina	నిస్సారమైన
 nissattuva	నిస్సత్తువ
 nityOtsavAlni	నిత్యోత్సవాల్ని
-nityOtsava	నిత్యోత్సవ
 nitya	నిత్య
 nityaM	నిత్యం
 nityapUjalu	నిత్యపూజలు
@@ -3621,7 +3589,6 @@ oMTlO	ఒంట్లో
 oMTlOMci	ఒంట్లోంచి
 oMTlOnU	ఒంట్లోనూ
 okE	ఒకే
-okElA	ఒకేలా
 oka	ఒక
 okaTE	ఒకటే
 okaTi	ఒకటి
@@ -3708,7 +3675,6 @@ pAripOtAyani	పారిపోతాయని
 pAripOtE	పారిపోతే
 pArk	పార్క్
 pArutU	పారుతూ
-pAruvETOtsavAlaku	పారువేటోత్సవాలకు
 pAruvETOtsavAllO	పారువేటోత్సవాల్లో
 pAruvETOtsavAlu	పారువేటోత్సవాలు
 pAruvETa	పారువేట
@@ -4227,7 +4193,6 @@ pradakshiNa	ప్రదక్షిణ
 pradakshiNala	ప్రదక్షిణల
 pradarSiMcani	ప్రదర్శించని
 pradarSistunnAmA	ప్రదర్శిస్తున్నామా
-pradhAnAlayaM	ప్రధానాలయం
 pradhAnAlayaMtO	ప్రధానాలయంతో
 pradhAna	ప్రధాన
 pradhAnaMgA	ప్రధానంగా
@@ -4268,7 +4233,6 @@ prapaMcaM	ప్రపంచం
 prapaMcaMlOki	ప్రపంచంలోకి
 prapaMcavyAptaMgA	ప్రపంచవ్యాప్తంగా
 prapattulatO	ప్రపత్తులతో
-prasAdAnni	ప్రసాదాన్ని
 prasAda	ప్రసాద
 prasAdistADu	ప్రసాదిస్తాడు
 prasAraM	ప్రసారం
@@ -4560,7 +4524,6 @@ riyO	రియో
 rommu	రొమ్ము
 rommulu	రొమ్ములు
 ruculanu	రుచులను
-rudrAbhishEkaM	రుద్రాభిషేకం
 rudra	రుద్ర
 rudramUrtini	రుద్రమూర్తిని
 rudravaraM	రుద్రవరం
@@ -4628,7 +4591,6 @@ sAmarthyamU	సామర్థ్యమూ
 sAmavai	సామవై
 sAmrAjyAdhISulu	సామ్రాజ్యాధీశులు
 sAmrAjya	సామ్రాజ్య
-sAnnihityAnni	సాన్నిహిత్యాన్ని
 sAnnihitya	సాన్నిహిత్య
 sAnnihityaM	సాన్నిహిత్యం
 sAnukUla	సానుకూల
@@ -5168,7 +5130,6 @@ tIsukuMTU	తీసుకుంటూ
 tIsukuMTuMTAru	తీసుకుంటుంటారు
 tIsukunE	తీసుకునే
 tIsukunEvALlu	తీసుకునేవాళ్లు
-tIsukunnAru	తీసుకున్నారు
 tIsukunna	తీసుకున్న
 tIsukuvaccArani	తీసుకువచ్చారని
 tIsukuvacci	తీసుకువచ్చి
@@ -5539,9 +5500,7 @@ unnAmaMTU	ఉన్నామంటూ
 unnAmani	ఉన్నామని
 unnAmanna	ఉన్నామన్న
 unnAnani	ఉన్నానని
-unnAru	ఉన్నారు
 unnAyA	ఉన్నాయా
-unnAyi	ఉన్నాయి
 unna	ఉన్న
 unnaMta	ఉన్నంత
 unnaMtaTi	ఉన్నంతటి
@@ -5580,7 +5539,6 @@ utsAhaMgA	ఉత్సాహంగా
 utsavAlaku	ఉత్సవాలకు
 utsavAlni	ఉత్సవాల్ని
 utsavAlu	ఉత్సవాలు
-utsavAnni	ఉత్సవాన్ని
 utsava	ఉత్సవ
 utsavaMlA	ఉత్సవంలా
 utsavarlu	ఉత్సవర్లు
@@ -5657,10 +5615,8 @@ vArilO	వారిలో
 vArilOnE	వారిలోనే
 vArini	వారిని
 vAritO	వారితో
-vArshikOtsava	వార్షికోత్సవ
 vArshika	వార్షిక
 vArta	వార్త
-vAru	వారు
 vAskyular	వాస్క్యులర్
 vAstavAlu	వాస్తవాలు
 vAstavAniki	వాస్తవానికి
@@ -6196,9 +6152,7 @@ yOgAkU	యోగాకూ
 yOgAku	యోగాకు
 yOgAlO	యోగాలో
 yOgAnu	యోగాను
-yOgAsanAla	యోగాసనాల
 yOgAsanAlanu	యోగాసనాలను
-yOgAsanAlu	యోగాసనాలు
 yOgAtO	యోగాతో
 yOgAvalla	యోగావల్ల
 yOga	యోగ
