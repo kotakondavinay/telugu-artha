@@ -36,7 +36,7 @@ public class NighantuvuService {
 
     public void init() {
         buildNighantuvuFiles("/nighantuvu.txt");
-        buildNighantuvuFiles("/nighantuvu-eenadu.txt");
+        //buildNighantuvuFiles("/nighantuvu-eenadu.txt");
     }
 
     private void buildNighantuvuFiles(String filePath) {
