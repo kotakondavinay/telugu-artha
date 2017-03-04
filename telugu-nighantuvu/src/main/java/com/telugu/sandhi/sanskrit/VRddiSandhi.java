@@ -15,11 +15,7 @@ import java.util.List;
  */
 public class VRddiSandhi extends BasicSandhi {
 
-    public SandhiResponse isSandhi(String tokenString, Nighantuvu nighantuvu, boolean isTeluguScript) {
-        if(isTeluguScript) {
-            tokenString = ts.t(tokenString, "telugu", "hk");
-        }
-        String token = tokenString;
+    public SandhiResponse isSandhi(String token, Nighantuvu nighantuvu) {
 
         // Lookup into possible values "ai", "au".
         List<SandhiSeperator> possibleSeperatos = new ArrayList<SandhiSeperator>();
@@ -27,15 +23,6 @@ public class VRddiSandhi extends BasicSandhi {
         possibleSeperatos.add(new SandhiSeperator("au", Arrays.asList("a", "A"), Arrays.asList("O", "au")));
 
         SandhiResponse sandhiResponse = isSandhi(token, possibleSeperatos, nighantuvu);
-        // TODO. english to telugu translation is not working. fix this.
-        if(isTeluguScript) {
-            if(sandhiResponse.isSandhi()) {
-                //String firstPart = sandhiResponse.getFirstPart();
-                //sandhiResponse.setFirstPart(ts.t(firstPart, "hk", "telugu"));
-                //String secondPart = sandhiResponse.getFirstPart();
-                //sandhiResponse.setSecondPart(ts.t(secondPart, "hk", "telugu"));
-            }
-        }
         return sandhiResponse;
     }
 }

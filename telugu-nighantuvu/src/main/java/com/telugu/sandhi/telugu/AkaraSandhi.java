@@ -9,6 +9,10 @@ import com.telugu.models.SandhiResponse;
  */
 public class AkaraSandhi extends BasicSandhi {
 
+    public SandhiResponse isSandhi(String tokenString, Nighantuvu nighantuvu) {
+        return null;
+    }
+
     @Override
     public SandhiResponse isSandhi(String tokenString, Nighantuvu nighantuvu, boolean isTeluguScript) {
 

@@ -16,7 +16,25 @@ public abstract class BasicSandhi {
 
     protected TeluguScript ts = new TeluguScript();
 
-    public abstract SandhiResponse isSandhi(String tokenString, Nighantuvu nighantuvu, boolean isTeluguScript);
+    public abstract SandhiResponse isSandhi(String tokenString, Nighantuvu nighantuvu);
+
+    public SandhiResponse isSandhi(String tokenString, Nighantuvu nighantuvu, boolean isTeluguScript) {
+        if(isTeluguScript) {
+            tokenString = ts.t(tokenString, "telugu", "hk");
+        }
+        SandhiResponse sandhiResponse = isSandhi(tokenString, nighantuvu);
+        if(isTeluguScript) {
+            if(sandhiResponse.isSandhi()) {
+                String firstPart = sandhiResponse.getFirstPart();
+                firstPart = firstPart.replace("aa" , "A").replace("ee", "I").replace("uu", "U").replace("oo", "U");
+                sandhiResponse.setFirstPart(ts.t(firstPart, "hk", "telugu"));
+                String secondPart = sandhiResponse.getSecondPart();
+                secondPart = secondPart.replace("aa" , "A").replace("ee", "I").replace("uu", "U").replace("oo", "U");
+                sandhiResponse.setSecondPart(ts.t(secondPart, "hk", "telugu"));
+            }
+        }
+        return sandhiResponse;
+    }
 
     public SandhiResponse isSandhi(String processedToken,
                                    SandhiSeperator sandhiSeperator, Nighantuvu nighantuvu) {

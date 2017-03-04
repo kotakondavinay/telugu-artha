@@ -14,11 +14,8 @@ import java.util.List;
  * Created by vinaykk on 26/01/17.
  */
 public class AnunasikaSandhi extends BasicSandhi {
-    public SandhiResponse isSandhi(String tokenString, Nighantuvu nighantuvu, boolean isTeluguScript) {
-        if(isTeluguScript) {
-            tokenString = ts.t(tokenString, "telugu", "hk");
-        }
-        String token = tokenString;
+
+    public SandhiResponse isSandhi(String token, Nighantuvu nighantuvu) {
 
         //Anunasikas are G, J, N, n, m
         // Lookup into possible values "Gm", "Jm", "Nm", "nm", "mm", "Gn", "Jn", "Nn", "nn", "mn".
@@ -35,15 +32,6 @@ public class AnunasikaSandhi extends BasicSandhi {
         possibleSeperatos.add(new SandhiSeperator("mm", Arrays.asList("p"), Arrays.asList("m")));
 
         SandhiResponse sandhiResponse = isSandhi(token, possibleSeperatos, nighantuvu);
-        // TODO. english to telugu translation is not working. fix this.
-        if(isTeluguScript) {
-            if(sandhiResponse.isSandhi()) {
-                //String firstPart = sandhiResponse.getFirstPart();
-                //sandhiResponse.setFirstPart(ts.t(firstPart, "hk", "telugu"));
-                //String secondPart = sandhiResponse.getFirstPart();
-                //sandhiResponse.setSecondPart(ts.t(secondPart, "hk", "telugu"));
-            }
-        }
         return sandhiResponse;
     }
 }

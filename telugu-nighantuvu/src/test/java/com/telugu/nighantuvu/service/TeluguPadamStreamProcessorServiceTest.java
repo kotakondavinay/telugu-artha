@@ -24,7 +24,7 @@ public class TeluguPadamStreamProcessorServiceTest {
 
 		String eenaduSet3 = "/eenadu/eenaduTemples.txt";
 		service.processSet(eenaduSet3);
-		service.outputDictinoryValues("/Users/vinaykk/telugu-words/nighantuvu-generated-2.txt");
+		service.outputDictinoryValues("/Users/vinaykk/telugu-words/nighantuvu-generated-4.txt");
 		Nighantuvu nighantuvu = service.getNighantuvu();
 		Assert.assertTrue(nighantuvu.getWords().size() > 100);
 

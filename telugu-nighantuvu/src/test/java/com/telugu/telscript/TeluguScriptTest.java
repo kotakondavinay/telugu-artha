@@ -30,5 +30,6 @@ public class TeluguScriptTest {
         String translate8 = tc.t("ధనుః", "telugu", "hk");
         Assert.assertEquals("dhanuH", translate8);
 
+
     }
 }

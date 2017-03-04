@@ -53,10 +53,36 @@ public class NighantuvuService {
         }
     }
 
+    private String processSuffixes(String word) {
+        /**
+         * Ku Rules.
+         * TODO. write rules for duku.
+         * laku suffix transforms into lu
+         * ku suffix gets silent
+         */
+        if(word.endsWith("duku")) {
+            return word;
+        }
+        if(word.endsWith("laku")) {
+            String processedword = word.substring(0,word.length()-4)+"lu";
+            return processedword;
+        }
+        if(word.endsWith("ku") || word.endsWith("kU")) {
+            String processedWord = word.substring(0, word.length()-2);
+            return processedWord;
+        }
+        return word;
+    }
+
     public NighantuvuProcessResponse processWord(String word) {
 
-        SandhiResponse sandhiResponse = sandhiService.isSandhi(word, true);
+        //First Filtering.
         String tenglishWord = ts.t(word, "telugu", "hk");
+        if(tenglishWord.length() <= 2) return new NighantuvuProcessResponse(false, false, false, word);
+        tenglishWord = processSuffixes(tenglishWord);
+
+        SandhiResponse sandhiResponse = sandhiService.isSandhi(tenglishWord, false);
+
         if (sandhiResponse.isSandhi()) {
             if (nighantuvu.contains(tenglishWord)) {
                 nighantuvu.delete(tenglishWord);
@@ -69,7 +95,7 @@ public class NighantuvuService {
             // TODOD. Check if they are any samaasam.
             if(!nighantuvu.contains(tenglishWord)) {
                 nighantuvu.add(tenglishWord);
-                teluguToEnglish.put(tenglishWord, word);
+                teluguToEnglish.put(tenglishWord, ts.t(tenglishWord, "hk", "telugu"));
                 return new NighantuvuProcessResponse(false, false, false, word);
             } else {
                 return new NighantuvuProcessResponse(false, false, true, word);

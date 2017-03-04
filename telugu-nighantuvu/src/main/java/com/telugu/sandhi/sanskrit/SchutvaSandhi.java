@@ -15,12 +15,7 @@ import java.util.List;
  */
 public class SchutvaSandhi extends BasicSandhi {
 
-    public SandhiResponse isSandhi(String tokenString, Nighantuvu nighantuvu, boolean isTeluguScript) {
-        if(isTeluguScript) {
-            tokenString = ts.t(tokenString, "telugu", "hk");
-        }
-        String token = tokenString;
-
+    public SandhiResponse isSandhi(String token, Nighantuvu nighantuvu) {
         // TODO. Check with Telugu Expert and fill rest values.
         List<SandhiSeperator> possibleSeperatos = new ArrayList<SandhiSeperator>();
         possibleSeperatos.add(new SandhiSeperator("cc", Arrays.asList("t"), Arrays.asList("c","S","s","sh")));
@@ -31,15 +26,6 @@ public class SchutvaSandhi extends BasicSandhi {
 
         SandhiResponse sandhiResponse = isSandhi(token, possibleSeperatos, nighantuvu);
         // TODO. english to telugu translation is not working. fix this.
-        if(isTeluguScript) {
-            if(sandhiResponse.isSandhi()) {
-                //String firstPart = sandhiResponse.getFirstPart();
-                //sandhiResponse.setFirstPart(ts.t(firstPart, "hk", "telugu"));
-                //String secondPart = sandhiResponse.getFirstPart();
-                //sandhiResponse.setSecondPart(ts.t(secondPart, "hk", "telugu"));
-            }
-        }
         return sandhiResponse;
-
     }
 }
