@@ -225,7 +225,7 @@ AvirbhaviMcina	ఆవిర్భవించిన
 Aviri	ఆవిరి
 AvishkArAniki	ఆవిష్కారానికి
 AvishkAraM	ఆవిష్కారం
-AvishkaristOMdi	ఆవిష్కరిస్త్ఓంది
+AvishkaristOMdi	ఆవిష్కరిస్తోంది
 AyA	ఆయా
 Ayana	ఆయన
 AyuHpramANaM	ఆయుఃప్రమాణం
@@ -525,7 +525,7 @@ aMdaM	అందం
 aMdaMgA	అందంగా
 aMdaTaM	అందటం
 aMdajEstAru	అందజేస్తారు
-aMdajEstOMdi	అందజేస్త్ఓంది
+aMdajEstOMdi	అందజేస్తోంది
 aMdaka	అందక
 aMdamaina	అందమైన
 aMdarU	అందరూ
@@ -540,7 +540,7 @@ aMdiMcEMduku	అందించేందుకు
 aMdiMcEvanI	అందించేవనీ
 aMdiMcaTaM	అందించటం
 aMdistE	అందిస్తే
-aMdistOMdani	అందిస్త్ఓందని
+aMdistOMdani	అందిస్తోందని
 aMdistunnAru	అందిస్తున్నారు
 aMdubATulO	అందుబాటులో
 aMdubATulOki	అందుబాటులోకి
@@ -549,7 +549,7 @@ aMdukOvAlannadi	అందుకోవాలన్నది
 aMdukani	అందుకని
 aMdukoMTunnADu	అందుకొంటున్నాడు
 aMduku	అందుకు
-aMdukuMTOMdi	అందుకుంట్ఓంది
+aMdukuMTOMdi	అందుకుంటోంది
 aMdukuMTU	అందుకుంటూ
 aMdulO	అందులో
 aMdutuMDaTaMtO	అందుతుండటంతో
@@ -663,7 +663,7 @@ akkaDa	అక్కడ
 akkaDi	అక్కడి
 akkaNnuMci	అక్కణ్నుంచి
 akkuna	అక్కున
-akkunajErcukuMTOMdi	అక్కునజేర్చుకుంట్ఓంది
+akkunajErcukuMTOMdi	అక్కునజేర్చుకుంటోంది
 akrama	అక్రమ
 akshaya	అక్షయ
 alA	అలా
@@ -765,7 +765,7 @@ anumAnAlu	అనుమానాలు
 anumatiMcAlani	అనుమతించాలని
 anumatiMcaru	అనుమతించరు
 anumatistAru	అనుమతిస్తారు
-anumatistOMdi	అనుమతిస్త్ఓంది
+anumatistOMdi	అనుమతిస్తోంది
 anumatistuMdi	అనుమతిస్తుంది
 anumatistunnAru	అనుమతిస్తున్నారు
 anunayaMgA	అనునయంగా
@@ -881,7 +881,7 @@ avasaramanukuMTE	అవసరమనుకుంటే
 avasaramavutAyi	అవసరమవుతాయి
 avasaramuMTuMdi	అవసరముంటుంది
 avasaramunnA	అవసరమున్నా
-avatariMcabOtOMdi	అవతరించబోత్ఓంది
+avatariMcabOtOMdi	అవతరించబోతోంది
 avataristuMdanI	అవతరిస్తుందనీ
 avayavAla	అవయవాల
 avayavAlatO	అవయవాలతో
@@ -1275,7 +1275,7 @@ cEstAmO	చేస్తామో
 cEstAru	చేస్తారు
 cEstAyi	చేస్తాయి
 cEstE	చేస్తే
-cEstOMdi	చేస్త్ఓంది
+cEstOMdi	చేస్తోంది
 cEstU	చేస్తూ
 cEstuMTAru	చేస్తుంటారు
 cEstuMdani	చేస్తుందని
@@ -1296,7 +1296,7 @@ cEsukonna	చేసుకొన్న
 cEsukuMTAM	చేసుకుంటాం
 cEsukuMTAru	చేసుకుంటారు
 cEsukuMTE	చేసుకుంటే
-cEsukuMTOMdi	చేసుకుంట్ఓంది
+cEsukuMTOMdi	చేసుకుంటోంది
 cEsukuMTU	చేసుకుంటూ
 cEsukuMTuMdi	చేసుకుంటుంది
 cEsukuMTunna	చేసుకుంటున్న
@@ -1438,7 +1438,7 @@ ceMdinavi	చెందినవి
 ceMta	చెంత
 cebutAru	చెబుతారు
 cebutAyi	చెబుతాయి
-cebutOMdi	చెబుత్ఓంది
+cebutOMdi	చెబుతోంది
 cebutuMTE	చెబుతుంటే
 cebutunnAru	చెబుతున్నారు
 cebutunnAyi	చెబుతున్నాయి
@@ -1470,7 +1470,7 @@ ceppinaTTu	చెప్పినట్టు
 ceppukOlEkapOyinA	చెప్పుకోలేకపోయినా
 ceppukuMTAru	చెప్పుకుంటారు
 ceppulu	చెప్పులు
-ceptOMdi	చెప్త్ఓంది
+ceptOMdi	చెప్తోంది
 ceptunnAyi	చెప్తున్నాయి
 cey	చెయ్
 ceyyAlO	చెయ్యాలో
@@ -1658,10 +1658,10 @@ dakkAlsinaMta	దక్కాల్సినంత
 dakkEdi	దక్కేది
 dakkakuMDA	దక్కకుండా
 dakkutAyA	దక్కుతాయా
-dakkutAyaMTOMdi	దక్కుతాయంట్ఓంది
+dakkutAyaMTOMdi	దక్కుతాయంటోంది
 dakkutAyani	దక్కుతాయని
 dakkutAyi	దక్కుతాయి
-dakkutOMdi	దక్కుత్ఓంది
+dakkutOMdi	దక్కుతోంది
 dakkutunnAyi	దక్కుతున్నాయి
 dakshArAmaM	దక్షారామం
 daksha	దక్ష
@@ -1993,7 +1993,7 @@ grahiMcAru	గ్రహించారు
 grahiMcE	గ్రహించే
 grahiMcEMduku	గ్రహించేందుకు
 grahiMcukOvaTaMlOnU	గ్రహించుకోవటంలోనూ
-guDDinammakAllOMcI	గుడ్డినమ్మకాల్ల్ఓంచీ
+guDDinammakAllOMcI	గుడ్డినమ్మకాల్లోంచీ
 guDi	గుడి
 guLlalO	గుళ్లలో
 guMDe	గుండె
@@ -2261,7 +2261,7 @@ jarugutuMdO	జరుగుతుందో
 jarugutuMdi	జరుగుతుంది
 jarugutunnAyi	జరుగుతున్నాయి
 jarugutunna	జరుగుతున్న
-jarupukoMTOMdi	జరుపుకొంట్ఓంది
+jarupukoMTOMdi	జరుపుకొంటోంది
 jarupukuMTAru	జరుపుకుంటారు
 jaruputAru	జరుపుతారు
 jata	జత
@@ -2525,7 +2525,7 @@ kalpiMciMdi	కల్పించింది
 kalpiMcina	కల్పించిన
 kalpistAmani	కల్పిస్తామని
 kalpistAru	కల్పిస్తారు
-kalpistOMdi	కల్పిస్త్ఓంది
+kalpistOMdi	కల్పిస్తోంది
 kalpistU	కల్పిస్తూ
 kalpistuMdi	కల్పిస్తుంది
 kalugutAyi	కలుగుతాయి
@@ -2547,8 +2547,8 @@ kanIsa	కనీస
 kanIsaM	కనీసం
 kanabaDE	కనబడే
 kanabaDEvi	కనబడేవి
-kanabaDutOMdani	కనబడుత్ఓందని
-kanabaDutOMdi	కనబడుత్ఓంది
+kanabaDutOMdani	కనబడుతోందని
+kanabaDutOMdi	కనబడుతోంది
 kanabaDutuMTAyannadi	కనబడుతుంటాయన్నది
 kanabaDutuMTE	కనబడుతుంటే
 kanabaDutuMdi	కనబడుతుంది
@@ -2720,7 +2720,7 @@ kshEtrarAjaMgA	క్షేత్రరాజంగా
 kshINata	క్షీణత
 kshIrArAmESvaruDigA	క్షీరారామేశ్వరుడిగా
 kshaNAlainA	క్షణాలైనా
-kuMgadIstOMdi	కుంగదీస్త్ఓంది
+kuMgadIstOMdi	కుంగదీస్తోంది
 kuMgadIstuMdi	కుంగదీస్తుంది
 kuMgubATu	కుంగుబాటు
 kuTuMbAla	కుటుంబాల
@@ -3154,7 +3154,7 @@ mellagA	మెల్లగా
 melugutU	మెలుగుతూ
 merugaina	మెరుగైన
 merugavutAyi	మెరుగవుతాయి
-merugavutOMdA	మెరుగవుత్ఓందా
+merugavutOMdA	మెరుగవుతోందా
 merugavutuMdi	మెరుగవుతుంది
 merugavutunna	మెరుగవుతున్న
 merugavvaTAniki	మెరుగవ్వటానికి
@@ -3482,7 +3482,7 @@ nirvahiMciMdi	నిర్వహించింది
 nirvahiMcina	నిర్వహించిన
 nirvahiMcukunna	నిర్వహించుకున్న
 nirvahistAru	నిర్వహిస్తారు
-nirvahistOMdi	నిర్వహిస్త్ఓంది
+nirvahistOMdi	నిర్వహిస్తోంది
 nirvahistunna	నిర్వహిస్తున్న
 nirvighnaMgA	నిర్విఘ్నంగా
 nirvighnamastu	నిర్విఘ్నమస్తు
@@ -3522,7 +3522,7 @@ oMTarigAnE	ఒంటరిగానే
 oMTelU	ఒంటెలూ
 oMTiki	ఒంటికి
 oMTlO	ఒంట్లో
-oMTlOMci	ఒంట్ల్ఓంచి
+oMTlOMci	ఒంట్లోంచి
 oMTlOnU	ఒంట్లోనూ
 okE	ఒకే
 oka	ఒక
@@ -3675,7 +3675,7 @@ pUja	పూజ
 pUjala	పూజల
 pUjalaMdukoMTunnAyi	పూజలందుకొంటున్నాయి
 pUjalaMdukuMTADu	పూజలందుకుంటాడు
-pUjalaMdukuMTOMdi	పూజలందుకుంట్ఓంది
+pUjalaMdukuMTOMdi	పూజలందుకుంటోంది
 pUjalaMdukuMTunnADu	పూజలందుకుంటున్నాడు
 pUjalu	పూజలు
 pUjiMcADaTa	పూజించాడట
@@ -3899,7 +3899,7 @@ peMcina	పెంచిన
 peMcukOvaTAniki	పెంచుకోవటానికి
 peMcukOvaTaM	పెంచుకోవటం
 peMcukOvaTaMlO	పెంచుకోవటంలో
-peMcukuMTOMdi	పెంచుకుంట్ఓంది
+peMcukuMTOMdi	పెంచుకుంటోంది
 peMcutAyi	పెంచుతాయి
 peMkullO	పెంకుల్లో
 peMpakAnikI	పెంపకానికీ
@@ -3950,7 +3950,7 @@ perigipOtunnAyani	పెరిగిపోతున్నాయని
 perigipOyiMdi	పెరిగిపోయింది
 perugutAru	పెరుగుతారు
 perugutAyi	పెరుగుతాయి
-perugutOMdi	పెరుగుత్ఓంది
+perugutOMdi	పెరుగుతోంది
 perugutuMdani	పెరుగుతుందని
 perugutuMdi	పెరుగుతుంది
 perugutunnAyi	పెరుగుతున్నాయి
@@ -4349,7 +4349,7 @@ rENiguMTa	రేణిగుంట
 rENukA	రేణుకా
 rENukAMbagA	రేణుకాంబగా
 rENuka	రేణుక
-rEgutOMdO	రేగుత్ఓందో
+rEgutOMdO	రేగుతోందో
 rEgutunna	రేగుతున్న
 rEkettiMcaTaM	రేకెత్తించటం
 rEpE	రేపే
@@ -4485,10 +4485,10 @@ sAgani	సాగని
 sAgavaccu	సాగవచ్చు
 sAgiMcAli	సాగించాలి
 sAgiMcE	సాగించే
-sAgipOtOMdani	సాగిపోత్ఓందని
+sAgipOtOMdani	సాగిపోతోందని
 sAgipOtunna	సాగిపోతున్న
 sAgutAyi	సాగుతాయి
-sAgutOMdi	సాగుత్ఓంది
+sAgutOMdi	సాగుతోంది
 sAgutUnE	సాగుతూనే
 sAgutuMTuMdigAnI	సాగుతుంటుందిగానీ
 sAgutunna	సాగుతున్న
@@ -4778,7 +4778,7 @@ sarikotta	సరికొత్త
 saripOdEmO	సరిపోదేమో
 saripOdu	సరిపోదు
 saripOru	సరిపోరు
-saripOtOMdA	సరిపోత్ఓందా
+saripOtOMdA	సరిపోతోందా
 saripOtuMdi	సరిపోతుంది
 sarisamAnaMgA	సరిసమానంగా
 sarjan	సర్జన్
@@ -5099,7 +5099,7 @@ taggina	తగ్గిన
 tagginaTTu	తగ్గినట్టు
 taggipOtAyi	తగ్గిపోతాయి
 taggipOtE	తగ్గిపోతే
-taggipOtOMdani	తగ్గిపోత్ఓందని
+taggipOtOMdani	తగ్గిపోతోందని
 taggipOtuMTE	తగ్గిపోతుంటే
 taggipOtuMdEmOnanna	తగ్గిపోతుందేమోనన్న
 taggipOvaTAniki	తగ్గిపోవటానికి
@@ -5175,7 +5175,7 @@ tappistunnAyi	తప్పిస్తున్నాయి
 tappu	తప్పు
 tappuDu	తప్పుడు
 tappugA	తప్పుగా
-tapputOMdA	తప్పుత్ఓందా
+tapputOMdA	తప్పుతోందా
 tarAla	తరాల
 tarAniki	తరానికి
 taraMgiNi	తరంగిణి
@@ -5204,7 +5204,7 @@ tayArI	తయారీ
 tayArIlO	తయారీలో
 tayArainappuDu	తయారైనప్పుడు
 tayAravutAyi	తయారవుతాయి
-tayAravutOMdi	తయారవుత్ఓంది
+tayAravutOMdi	తయారవుతోంది
 tayAravutuMTAru	తయారవుతుంటారు
 tayAravutuMdi	తయారవుతుంది
 tayArayyE	తయారయ్యే
@@ -5241,7 +5241,7 @@ telugusIma	తెలుగుసీమ
 teluguvAri	తెలుగువారి
 telupu	తెలుపు
 telupulanu	తెలుపులను
-telustOMdi	తెలుస్త్ఓంది
+telustOMdi	తెలుస్తోంది
 telusu	తెలుసు
 telusukOgaligina	తెలుసుకోగలిగిన
 telusukOvAli	తెలుసుకోవాలి
@@ -5254,10 +5254,10 @@ telusukuni	తెలుసుకుని
 teppOtsavAlU	తెప్పోత్సవాలూ
 teppiMcADu	తెప్పించాడు
 tera	తెర
-terallOMcI	తెరల్ల్ఓంచీ
+terallOMcI	తెరల్లోంచీ
 terici	తెరిచి
 terustAru	తెరుస్తారు
-testOMdi	తెస్త్ఓంది
+testOMdi	తెస్తోంది
 testU	తెస్తూ
 testunnAru	తెస్తున్నారు
 thOraNi	థోరణి
@@ -5355,7 +5355,7 @@ uMTAyi	ఉంటాయి
 uMTAyigAnI	ఉంటాయిగానీ
 uMTE	ఉంటే
 uMTEnE	ఉంటేనే
-uMTOMdi	ఉంట్ఓంది
+uMTOMdi	ఉంటోంది
 uMTuMDaTaM	ఉంటుండటం
 uMTuMdA	ఉంటుందా
 uMTuMdani	ఉంటుందని
@@ -5766,7 +5766,7 @@ vasatulu	వసతులు
 vastAru	వస్తారు
 vastAyani	వస్తాయని
 vastE	వస్తే
-vastOMdi	వస్త్ఓంది
+vastOMdi	వస్తోంది
 vastrAnni	వస్త్రాన్ని
 vastradhAraNatO	వస్త్రధారణతో
 vastu	వస్తు
@@ -5911,14 +5911,14 @@ vikTOriyan	విక్టోరియన్
 vikalAMgulu	వికలాంగులు
 vikhyAta	విఖ్యాత
 vikrayistAru	విక్రయిస్తారు
-vikrayistOMdi	విక్రయిస్త్ఓంది
+vikrayistOMdi	విక్రయిస్తోంది
 vikrayistunnAru	విక్రయిస్తున్నారు
 vilInAnaMtaraM	విలీనానంతరం
 vilInAniki	విలీనానికి
 vilIna	విలీన
 vilInaM	విలీనం
 vilInaMtO	విలీనంతో
-vilasillutOMdi	విలసిల్లుత్ఓంది
+vilasillutOMdi	విలసిల్లుతోంది
 viluva	విలువ
 viluvaina	విలువైన
 vimAnASrayAniki	విమానాశ్రయానికి
@@ -5930,7 +5930,7 @@ vimarSiMcaTaM	విమర్శించటం
 vimukti	విముక్తి
 vin	విన్
 vinAyakuNNi	వినాయకుణ్ణి
-vinipistOMdi	వినిపిస్త్ఓంది
+vinipistOMdi	వినిపిస్తోంది
 viniyOgadArlatO	వినియోగదార్లతో
 viniyOgadArlu	వినియోగదార్లు
 viniyOgiMcukuMTU	వినియోగించుకుంటూ

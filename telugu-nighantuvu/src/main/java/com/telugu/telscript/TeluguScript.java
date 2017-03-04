@@ -90,7 +90,7 @@ public class TeluguScript {
         scheme.put("other_marks", new String[] {"ం", "ః", "ఁ"});
         scheme.put("virama", new String[] {"్"});
         scheme.put("consonants", new String[] {"క", "ఖ", "గ", "ఘ", "ఙ", "చ", "ఛ", "జ", "ఝ", "ఞ", "ట", "ఠ", "డ", "ఢ", "ణ", "త", "థ", "ద", "ధ", "న", "ప", "ఫ", "బ", "భ", "మ", "య", "ర", "ల", "వ", "శ", "ష", "స", "హ", "ళ", "క్ష", "జ్ఞ"});
-        scheme.put("symbols", new String[] {"౦", "౧", "౨", "౩", "౪", "౫", "౬", "౭", "౮", "౯", "ఓం", "ఽ", "।", "॥"});
+        scheme.put("symbols", new String[] {"౦", "౧", "౨", "౩", "౪", "౫", "౬", "౭", "౮", "౯", "ఽ", "।", "॥"});
         scheme.put("other", new String[] {"", "", "", "", "", "", "", "", "ఱ"});
         schemes.put("telugu", scheme);
 
@@ -103,7 +103,7 @@ public class TeluguScript {
         scheme.put("other_marks", new String[] {"M", "H", "~",});
         scheme.put("virama", new String[] {""});
         scheme.put("consonants", new String[] {"k", "kh", "g", "gh", "G", "c", "C", "j", "jh", "J", "T", "Th", "D", "Dh", "N", "t", "th", "d", "dh", "n", "p", "ph", "b", "bh", "m", "y", "r", "l", "v", "S", "sh", "s", "h", "L", "kS", "jJ"});
-        scheme.put("symbols", new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "OM", "'", "|", "||"});
+        scheme.put("symbols", new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "'", "|", "||"});
         schemes.put("hk", scheme);
     }
 
